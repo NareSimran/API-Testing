@@ -1,0 +1,120 @@
+Test Plan for Number Conversion Service
+Created by:Simran Nare
+Date: 02-03-2025
+
+1. Objective
+The goal of this test plan is to verify the functionality, quality, and reliability of the Number Conversion Web Service available at https://www.dataaccess.com/webservicesserver/NumberConversion.wso. This web service converts a given number into its word form. The objective is to ensure that the service behaves as expected across a variety of valid, invalid, and edge cases.
+
+2. Scope
+The scope of this test plan includes the following:
+
+Features to be Tested
+Conversion of numbers to words (valid and edge cases).
+Proper SOAP request and response handling.
+Response validation and content correctness.
+API's ability to handle valid and invalid inputs.
+Types of Testing
+Manual Testing
+Automated Testing
+Performance Testing
+Security Testing
+Test Environments
+Operating Systems: Windows 10, macOS, Linux
+Browsers: Google Chrome, Mozilla Firefox, Microsoft Edge
+Devices: Desktop computers, laptops, smartphones
+Network Connectivity: Wi-Fi, cellular, wired connections
+Security Protocols: HTTPS, Valid SSL certificates
+Access Permissions: Testing with valid credentials (if required)
+
+3. Inclusions
+Introduction: Overview of testing the Number Conversion service, which accepts a number and returns it as a word-form output in XML format.
+Test Objectives: Verifying that the service converts numbers accurately and handles errors properly.
+Functional Tests: Basic functionality and edge cases (i.e., negative numbers, large numbers, etc.)
+
+
+4. Exclusions
+Testing non-number inputs such as special characters, alphanumeric strings, etc. (to be treated as invalid inputs).
+Stress testing the API under extreme load beyond normal use cases.
+
+
+5. Test Environments
+Operating Systems: Windows 10, macOS, Linux
+Browsers: Google Chrome, Mozilla Firefox, Microsoft Edge
+Devices: Desktop computers, laptops, smartphones
+Network Connectivity: Wi-Fi, cellular, wired connections
+Security Protocols: HTTPS, SSL certificates
+Access Permissions: Based on API's access control (if any)
+
+
+6. Defect Reporting Procedure
+Defect Identification: Any deviation from the expected output or behavior.
+Defect Reporting:
+Report using JIRA or another tracking tool.
+Provide detailed steps, screenshots, or logs to reproduce the issue.
+Classify defects based on severity (Critical, High, Medium, Low).
+Tracking Tools: JIRA, Bugzilla, or similar tools.
+Roles and Responsibilities:
+Test Lead: Oversee testing, review reports.
+Testers: Execute test cases, log defects.
+
+
+Developers: Fix defects.
+7. Test Strategy
+Test Scenario Creation
+Techniques:
+Equivalence Class Partitioning (for valid/invalid number inputs).
+Boundary Value Analysis (edge cases like 0, 1, negative numbers).
+Decision Table Testing (for different ranges of numbers).
+State Transition Testing (for different input states).
+Testing Procedure
+Smoke Testing: Basic functionality check for converting small and large numbers.
+In-depth Testing: Detailed test cases based on valid, invalid, and edge case inputs.
+Performance Testing: Measure API response time and its behavior under load.
+Regression Testing: Ensuring no breaks in functionality after fixes.
+Exploratory Testing: Random and unexpected inputs to test robustness.
+
+
+8. Test Schedule
+Test Plan Creation: [Start Date] - [End Date]
+Test Case Creation: [Start Date] - [End Date]
+Test Case Execution: [Start Date] - [End Date]
+Test Report: [End Date]
+
+
+9. Test Deliverables
+Test Cases: Detailed test cases document in Excel/Word format.
+Test Execution Report: Results of executed tests.
+Defect Report: A list of defects found during testing.
+Test Summary Report: Summary of test execution, defects, and overall quality assessment.
+
+
+10. Entry and Exit Criteria
+Entry Criteria
+Test environment set up.
+Requirements and test cases signed off.
+Testable build or service available.
+Exit Criteria
+All test cases executed.
+All critical defects fixed.
+Test reports ready for review and submission.
+
+
+11. Tools
+Defect Tracking Tools: JIRA
+Test Case Management: Excel, Google Sheets
+Performance Tools: Apache JMeter
+Automation Tools: Postman (for API testing)
+SOAP Testing Tools: SOAP UI
+
+
+12. Risks and Mitigations
+Possible Risks:
+Non-Availability of Resource: In case of tester unavailability, resource replacement.
+Slow Response Time: If the API responds slowly, perform load testing and optimize.
+Mitigations:
+Use backup resources and pre-configured environments for faster execution.
+Use monitoring tools to track performance issues.
+
+
+13. Approvals
+Documents for Client Approval: Test Plan, Test Scenarios, Test Cases, and Final Test Reports.
